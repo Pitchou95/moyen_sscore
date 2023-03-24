@@ -1,0 +1,18 @@
+ALGORITHM moyen_score
+VAR
+    notes:ARRAY_OF FLOAT[10];
+    sum:FLOAT;
+    moyen_score:FLOAT;
+    i:INTEGER;
+BEGIN
+    sum := 0; 
+    FOR i FROM 0 TO 9 DO
+        WRITE("Enter note : ", i+1);
+        READ(notes[i]);
+        sum := sum + notes[i]; 
+    END_FOR
+    moyen_score := sum / 10; 
+    WRITE("The moyen score is: ", moyen_score ,"and",notes[i]);
+END 
+
+
